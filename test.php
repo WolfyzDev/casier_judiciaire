@@ -40,7 +40,14 @@
             if ($result->rowCount() > 0) {
                 echo "<div>" . "<h1>" . $_POST['nom'] . "</h1>" . "</div>";
                 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-                    echo "<div>". "<p> Date de l'arrestation : " . $row['date'] . "</p>" . "<p> Agent responsable de l'arrestation : " . $row['agent'] . "</p>" . "<p> Sanction : " . $row['sanction'] . "</p>" . "<p> Raison : " . $row['raison'] . "</p>" ."<p> Lien vers la carte : " . $row['carte'] . "</p>" . "</div>";
+                    echo "<div>".
+                         "<p> Date de l'arrestation : " . $row['date'] . "</p>" .
+                         "<p> Agent responsable de l'arrestation : " . $row['agent'] . "</p>" .
+                         "<p> Sanction : " . $row['sanction'] . "</p>" .
+                         "<p> Raison : " . $row['raison'] . "</p>" .
+                         "<p> Lien vers la carte : " . $row['carte'] . "</p>" .
+                         "</div>" .
+                         "<hr style=\"border-color: white;\">";
                 }
             } else {
                 echo "<div>Aucun résultat trouvé.</div>";
