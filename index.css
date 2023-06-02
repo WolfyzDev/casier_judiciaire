@@ -1,0 +1,48 @@
+body {
+    background: black;
+}
+
+.d {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.e {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+}
+
+.search {
+    width: 1000px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#envoyer {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+}
+
+#folder {
+    height: 35px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+#upload-button {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
