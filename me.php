@@ -14,7 +14,7 @@
 
 		// Vérifiez si l'insertion a réussi
 		if ($result) {
-			header('Location: index.html');
+			header('Location: http://casierjudnyspd.atwebpages.com/');
 			exit;
 
 		} else {
